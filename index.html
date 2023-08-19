@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blogging App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <div id="emailWindow" class="email-window">
+        <div class="icon">
+            <img id="windowIcon" src="./assets/danger.png" alt="danger">
+        </div>
+        <p id="emailErrorDesc">There was an error sending the password reset link. Please try again later.</p>
+        <p id="loginErrorDesc">Sorry, the third-party login is currently unavailable. Please try again later or use an
+            alternative login method.</p>
+        <p id="passError">Invalid email or password. Please check your credentials and try again.</p>
+        <p id="accCreated">Account created successfully! You can now log in with your credentials.</p>
+    </div>
+
+    <div class="header-parent">
+        <div class="header">
+            <div class="header-left">
+                <h3>Blogging App</h3>
+            </div>
+            <div class="header-right">
+                <a href="Profile/profileChange.html" id="userName"></a>
+               
+            </div>
+        </div>
+    </div>
+
+    <div class="loader-container" id="loader">
+        <div class="loader"></div>
+    </div>
+    <div class="content" id="content">
+        <!-- Your main content goes here -->
+    </div>
+    <main class="container">
+        <!-- <section class="sections-wrapper"> -->
+            <!-- <section class="left-section"> -->
+                <!-- <div class="left-section-top">
+                    <h1><span id="signInText">Sign In</span> to</h1>
+                    <h2>Connect and share with the people.</h2>
+                </div>
+                <div class="left-section-bottom">
+                    <p class="left-section-bottom-p">If you <span id="haveAccountText">don’t</span> have an account
+                        <span id="regText">register</span>
+                    </p>
+                    <p>to continue to <span class="purple-text">App.</span></p>
+                </div>
+                <div class="bg-img">
+                    <img src="./assets/Saly-14.png" alt="saly exploring the site.">
+                </div> -->
+            <!-- </section> -->
+            <section class="right-section">
+                
+                <div class="sign-head-parent">
+                    <p class="regOrLogText sign-head active-sign-head selectAndHighlight">Log In</p>
+                    <p class="regOrLogText sign-head selectAndHighlight">Sign Up</p>
+                </div>
+                <!-- Sign In HTML -->
+                <form onsubmit="return false;" class="form" id="signInForm">
+                    <div class="email-input">
+                        <input id="email" class="form-input" type="email" placeholder="Email or user name">
+                    </div>
+                    <div class="password-input">
+                        <input id="password" class="form-input" type="password" placeholder="Password">
+                        <img src="./assets/visible.svg" alt="eye">
+                        <p class="forget-pass-text" onclick="showEmailWindow('emailErrorDesc')">Forgor password ?</p>
+                        <p class="invalid-user v-hidden" id="invalidUser">Invalid email or password.</p>
+                    </div>
+                    <div>
+                        <button id="logInBtn">Login</button>
+                    </div>
+                </form>
+                <!-- Sign Up HTML -->
+                <form onsubmit="return false;" class="form d-none" id="signUpForm" style="gap: 18px;">
+                    <div>
+                        <input id="newFirstName" class="form-input" type="text" placeholder="First name" minlength="3"
+                            maxlength="20" required>
+                        <p id="newNameSpacesError" class="pass-donot-match v-hidden">Name can't start or end with a
+                            blank space</p>
+                    </div>
+                    <div>
+                        <input id="newLastName" class="form-input" type="text" placeholder="Last name" minlength="1"
+                            maxlength="20" required>
+                        <p id="usernameExistError" class="pass-donot-match v-hidden">This username is already taken.</p>
+                    </div>
+                    <div>
+                        <input id="newEmail" class="form-input" type="email" placeholder="Email address" required>
+                        <p id="invalidEmailError" class="pass-donot-match v-hidden">Invalid email</p>
+                        <p id="emailExistError" class="pass-donot-match d-none">This email is already taken</p>
+                    </div>
+                    <div class="password-input">
+                        <input id="newPassword" class="form-input" type="password" placeholder="Password" required
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        <img src="./assets/visible.svg" alt="eye">
+                        <p id="newPassSpacesError" class="pass-valid-match">Password must have to have atleast
+                            8 characters and must include capital and small later characters</p>
+                    </div>
+                    <div class="password-input">
+                        <input id="newConfirmPassword" class="form-input" type="password" placeholder="Confrim Password"
+                            required>
+                        <img src="./assets/visible.svg" alt="eye">
+                        <p id="newPassMatchError" class="pass-donot-match v-hidden">Passwords didn't match. Try again.
+                        </p>
+                    </div>
+                    <div>
+                        <button id="registerBtn" class="register-btn">Register</button>
+                    </div>
+                </form>
+                <p class="third-party-text">or continue with</p>
+                <section class="third-party-sign-in">
+                    <div onclick="showEmailWindow()">
+                        <img src="./assets/google.svg" alt="google">
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+<script src="login.js" type="module" ></script>
+
+</html>

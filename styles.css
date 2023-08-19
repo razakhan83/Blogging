@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+    --w-page-max-: 1000px;
+    --w-ninty-five-: 95%;
+
+    --clr-black: #000000;
+    --clr-white-100: #ffffff;
+    --clr-white-50: #b0b0b0;
+    --clr-purple-100: #04a6ac;
+    --clr-purple-75: #04bec4;
+    --clr-purple-50: #f0efff;
+    --clr-green-60: #04a6ac;
+    --clr-green-50: #02d3da;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.header-parent {
+    background-color: #04a6ac;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    background-color: #04a6ac;
+    color: white;
+}
+
+.header-right {
+    display: flex;
+    gap: 16px;
+}
+
+.dashboard-parent {
+    background-color: white;
+}
+
+.dashboard {
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+
+.publish-blog-parent {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.publish-blog {
+    width: 60%;
+    max-width: 880px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.publish-blog-child {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.publish-button {
+
+
+    background-color: var(--clr-purple-75);
+    color: var(--clr-white-100);
+    text-shadow: 0 0 10px #000000;
+    box-shadow: 0px 4px 31px 0px rgba(42, 41, 61, 0.4);
+    padding: 15px 0px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    /* text-align: center; */
+    cursor: pointer;
+}
+
+.blog-parent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background-color: white;
+}
+
+.myblogs-main {
+    width: 60%;
+    max-width: 880px;
+}
+
+.myblogs-main-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.blog-head {
+    display: flex;
+    gap: 24px;
+    max-width: 568px;
+}
+
+#myBlogsMainHeading {
+    margin-bottom: 24px;
+}
+
+/* Login CSS */
+
+.selectAndHighlight {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.v-hidden {
+    visibility: hidden;
+}
+
+/* img {
+    display: block;
+} */
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.sections-wrapper {
+    max-width: var(--w-page-max-);
+    width: var(--w-ninty-five-);
+    display: flex;
+    gap: 36px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section {
+    width: var(--w-ninty-five-);
+    display: flex;
+    flex-direction: column;
+}
+
+.left-section-top {
+    margin-bottom: 36px;
+}
+
+.left-section-bottom-p {
+    margin-bottom: 5px;
+}
+
+.left-section-top h1 {
+    color: var(--clr-black);
+    font-size: 3.125rem;
+    font-weight: 600;
+}
+
+.left-section-top h2 {
+    color: var(--clr-black);
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+
+.purple-text {
+    color: var(--clr-purple-100);
+    cursor: pointer;
+}
+
+.bg-img {
+    margin-top: -50px;
+    width: 220px;
+    align-self: flex-end;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    max-width: 370px;
+    width: var(--w-ninty-five-);
+    margin-top: 150px;
+}
+
+.third-party-text {
+    text-align: center;
+    color: var(--clr-white-50);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.third-party-sign-in {
+    display: flex;
+    justify-content: center;
+    gap: 20.73px;
+}
+
+.third-party-sign-in img {
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    outline: none;
+}
+
+.sign-head-parent {
+    display: flex;
+    gap: 1rem;
+}
+
+.sign-head {
+    flex: 1;
+    background-color: var(--clr-purple-75);
+    color: var(--clr-white-100);
+    text-shadow: 0 0 10px #000000;
+    box-shadow: 0px 4px 31px 0px rgba(77, 71, 195, 0.4);
+    padding: 18px 0px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+}
+
+.active-sign-head {
+    background-color: var(--clr-purple-100);
+    text-shadow: none;
+}
+
+.email-input input {
+    margin-bottom: 10px;
+}
+
+.forget-pass-text {
+    text-align: end;
+    color: var(--clr-white-50);
+    font-size: 0.8125rem;
+    cursor: pointer;
+    margin-bottom: 18px;
+    margin-top: 17px;
+}
+
+.form-input {
+    padding: 20px 50px 20px 26px;
+    color: var(--clr-purple-100);
+    font-size: 0.9375rem;
+    width: 100%;
+    border-radius: 8px;
+    background: var(--clr-purple-50);
+    outline: none;
+    border: none;
+}
+
+.password-input {
+    position: relative;
+}
+
+.password-input img {
+    position: absolute;
+    top: 31.5px;
+    right: 20px;
+    width: 22px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.pass-valid-match {
+    color: var(--clr-white-50) !important;
+    font-size: 0.8125rem;
+    cursor: pointer;
+    margin-top: 6px;
+    margin-bottom: -12px;
+}
+
+.invalid-user {
+    color: #d9183b !important;
+    font-size: 0.8125rem;
+    margin-top: -38px;
+    margin-left: 4px;
+}
+
+.pass-donot-match {
+    color: #d9183b !important;
+    font-size: 0.8125rem;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: -16px;
+}
+
+.register-btn {
+    margin-top: 10px;
+}
+
+.right-section button {
+    padding: 18px;
+    width: 100%;
+    border-radius: 8px;
+    background: var(--clr-purple-100);
+    box-shadow: 0px 4px 31px 0px rgba(77, 71, 195, 0.4);
+    border: none;
+    outline: none;
+    color: var(--clr-white-100);
+    margin-bottom: 9px;
+    cursor: pointer;
+}
+
+.red-bg {
+    background-color: #ffdfe6;
+}
+
+.email-window {
+    position: absolute;
+    width: 90%;
+    max-width: 350px;
+    background-color: #ffffff;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px #00000038;
+    border: 1.85px solid var(--clr-white-50);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    z-index: 1;
+}
+
+.email-window .icon {
+    width: 50px;
+}
+
+.email-window p {
+    text-align: center;
+}
+
+@media (width > 784px) {
+    .right-section {
+        min-height: 770px;
+    }
+}
+
+@media (width < 785px) {
+    .container {
+        align-items: flex-start;
+    }
+
+    .sections-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        margin: 42px 0;
+    }
+
+    .third-party-sign-in {
+        margin-bottom: 42px;
+    }
+
+    .left-section {
+        max-width: 370px;
+    }
+
+    .bg-img {
+        display: none;
+    }
+
+    .sign-in-head {
+        display: none;
+    }
+}
+
+@media (height < 800px) {
+    .container {
+        align-items: flex-start;
+    }
+
+    .sections-wrapper {
+        margin: 42px 0;
+    }
+
+    .third-party-sign-in {
+        margin-bottom: 42px;
+    }
+}
+
+.allblogs-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.all-blogs {
+    max-width: 880px;
+    width: 100%;
+}
+
+.all-blogs-child {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 880px;
+    width: 100%;
+}
+
+.all-blogs-blog {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 880px;
+    width: 100%;
+}
+
+.all-blogs-blog-head {
+    display: flex;
+    gap: 24px;
+    max-width: 568px;
+}
+
+#allBlogsHeading {
+    margin-bottom: 24px;
+}
+
+.all-blogs-from-user-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.all-blogs-from-user {
+    max-width: 880px;
+    width: 100%;
+}
+
+.all-blogs-from-user-blog-head {
+    display: flex;
+    gap: 24px;
+}
+
+.all-blogs-from-user-blog {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background-color: white;
+}
+
+.all-blogs-from-user-child {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.blog-profile-image,
+.all-blogs-blog-profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 100%;
+}
